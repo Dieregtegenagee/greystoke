@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  <defs>
+    <style>
+      .house-shape { fill: #2C3E50; }
+      .door { fill: #E74C3C; }
+      .logo-text { font-family: 'Arial', sans-serif; font-size: 28px; font-weight: bold; fill: #2C3E50; }
+    </style>
+  </defs>
+
+  <!-- House silhouette -->
+  <polygon class="house-shape" points="15,50 32,20 50,20 50,50"/>
+  <polygon class="house-shape" points="50,20 68,20 85,50 50,50"/>
+  <rect class="house-shape" x="15" y="50" width="70" height="25"/>
+
+  <!-- Door -->
+  <rect class="door" x="40" y="48" width="10" height="27"/>
+  <circle class="house-shape" cx="49" cy="62" r="1.5"/>
+
+  <!-- Windows -->
+  <rect class="door" x="22" y="30" width="8" height="8"/>
+  <rect class="door" x="60" y="30" width="8" height="8"/>
+  <rect class="door" x="22" y="58" width="8" height="8"/>
+  <rect class="door" x="60" y="58" width="8" height="8"/>
+
+  <!-- Logo Text -->
+  <text class="logo-text" x="100" y="50">GreyStoke</text>
+
+  <!-- Small tagline -->
+  <text x="100" y="68" style="font-family: Arial; font-size: 11px; fill: #95A5A6;">Self-Catering Stays</text>
+</svg>

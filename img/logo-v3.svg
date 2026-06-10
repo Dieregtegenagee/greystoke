@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  <defs>
+    <style>
+      .logo-text-bold { font-family: 'Georgia', serif; font-size: 32px; font-weight: bold; fill: #2C3E50; }
+      .accent-line { stroke: #E74C3C; stroke-width: 3; }
+      .tagline-text { font-family: 'Arial', sans-serif; font-size: 11px; fill: #95A5A6; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- Logo Text -->
+  <text class="logo-text-bold" x="15" y="50">GreyStoke</text>
+
+  <!-- Decorative accent line under text -->
+  <line class="accent-line" x1="15" y1="60" x2="180" y2="60"/>
+
+  <!-- Small accent dot -->
+  <circle cx="185" cy="60" r="3" fill="#E74C3C"/>
+
+  <!-- Tagline -->
+  <text class="tagline-text" x="15" y="80">SELF-CATERING STAYS</text>
+</svg>

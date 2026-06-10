@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - GreyStoke Self-Catering</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo-v3.svg" alt="GreyStoke Logo" height="40">
+                    <span class="ms-2">GreyStoke</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accommodation.html">Accommodation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="attractions.html">Attractions</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="reviews.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-2" href="booking.html">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div id="heroCarousel-reviews" class="hero-carousel carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/kitchen/4.avif" class="d-block w-100" alt="Kitchen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/living_room/1.avif" class="d-block w-100" alt="Living room 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/kitchen/1.avif" class="d-block w-100" alt="Kitchen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/outside/1.avif" class="d-block w-100" alt="Outside 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/outside/2.avif" class="d-block w-100" alt="Outside 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/living_room/3.avif" class="d-block w-100" alt="Living room 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel-reviews" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel-reviews" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="hero-content">
+            <h1>Guest Reviews</h1>
+            <p>See what our guests are saying</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Reviews</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="section-title">What Guests Say</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <h3 class="text-primary">12</h3>
+                    <p class="text-muted">Reviews Received</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <h3 class="text-warning">★★★★★</h3>
+                    <p class="text-muted">Average Rating</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <p class="lead text-success"><i class="fas fa-check-circle me-2"></i>Verified Host</p>
+                    <p class="text-muted">3 years experience</p>
+                </div>
+            </div>
+            <div class="alert alert-info text-center">
+                <i class="fas fa-star me-2"></i>
+                <strong>Reviews are coming soon!</strong> Be among the first to share your GreyStoke experience.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="section-title">Leave a Review</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <form id="reviewForm" class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="revName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="revName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="revEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="revEmail" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Rating</label>
+                            <div>
+                                <div class="btn-group" role="group">
+                                    <input type="radio" class="btn-check" name="rating" id="rate1" value="1" required>
+                                    <label class="btn btn-outline-warning" for="rate1">★</label>
+                                    <input type="radio" class="btn-check" name="rating" id="rate2" value="2" required>
+                                    <label class="btn btn-outline-warning" for="rate2">★★</label>
+                                    <input type="radio" class="btn-check" name="rating" id="rate3" value="3" required>
+                                    <label class="btn btn-outline-warning" for="rate3">★★★</label>
+                                    <input type="radio" class="btn-check" name="rating" id="rate4" value="4" required>
+                                    <label class="btn btn-outline-warning" for="rate4">★★★★</label>
+                                    <input type="radio" class="btn-check" name="rating" id="rate5" value="5" required>
+                                    <label class="btn btn-outline-warning" for="rate5">★★★★★</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="revComment" class="form-label">Your Review</label>
+                            <textarea class="form-control" id="revComment" rows="4" placeholder="Share your experience..." required></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="revAgree" required>
+                            <label class="form-check-label" for="revAgree">
+                                I agree this review is honest and based on my genuine stay
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Submit Review</button>
+                    </form>
+                    <div id="reviewSuccess" class="alert alert-success mt-3" style="display: none;">
+                        <i class="fas fa-check-circle me-2"></i>
+                        Thank you! Your review has been submitted and will appear after moderation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p><strong>Address:</strong><br>26 Irving Steyn Straat<br>Cassledale, Springs<br>Gauteng, South Africa</p>
+                    <p><strong>Phone:</strong> <a href="tel:+27 797455867" class="text-white text-decoration-none">+27 79 745 5867</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:coenstokesliberia@gmail.com" class="text-white text-decoration-none">coenstokesliberia@gmail.com</a></p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="accommodation.html" class="text-white text-decoration-none">Accommodation</a></li>
+                        <li><a href="booking.html" class="text-white text-decoration-none">Book Now</a></li>
+                        <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Secure Payment</h5>
+                    <p class="text-muted mb-3"><i class="fab fa-cc-stripe"></i> Powered by Stripe</p>
+                    <h5>Follow Us</h5>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="row">
+                <div class="col-md-6"><p class="text-muted small mb-0">&copy; 2026 GreyStoke Self-Catering. All rights reserved.</p></div>
+                <div class="col-md-6 text-md-end"><p class="text-muted small mb-0"><a href="#" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#" class="text-white text-decoration-none">Terms & Conditions</a></p></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (this.checkValidity()) {
+                document.getElementById('reviewSuccess').style.display = 'block';
+                this.reset();
+                setTimeout(() => document.getElementById('reviewSuccess').style.display = 'none', 5000);
+            }
+        });
+    </script>
+</body>
+</html>
